@@ -8,9 +8,13 @@
 
 #import "ViewController.h"
 #import "DemoTableViewController.h"
+#import <QuartzCore/QuartzCore.h>
 
 @interface ViewController ()
-
+@property (weak, nonatomic) IBOutlet UIButton *btnAniamtionBottomTop;
+@property (weak, nonatomic) IBOutlet UIButton *btnAniamtionTopBottom;
+@property (weak, nonatomic) IBOutlet UIButton *btnAniamtionRightLeft;
+@property (weak, nonatomic) IBOutlet UIButton *btnAniamtionAwesome;
 @end
 
 @implementation ViewController
@@ -18,6 +22,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    // set corner radius for all buttons animation
+    [self.btnAniamtionBottomTop.layer setCornerRadius:15.0f];
+    [self.btnAniamtionTopBottom.layer setCornerRadius:15.0f];
+    [self.btnAniamtionRightLeft.layer setCornerRadius:15.0f];
+    [self.btnAniamtionAwesome.layer setCornerRadius:15.0f];
 }
 
 - (void)didReceiveMemoryWarning {

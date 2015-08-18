@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>F9B01F68-A3C7-47F2-BD94-CF71871098F1</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>DemoUITableViewAnimation</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>CF61B3148490B274ACCA79D6BC1D6742514AFC63</key>
 		<string>github.com:thebeckz007/UITableViewAnimations.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>DemoUITableViewAnimation/DemoUITableViewAnimation.xcodeproj/project.xcworkspace</string>
+	<string>DemoUITableViewAnimation/DemoUITableViewAnimation.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>CF61B3148490B274ACCA79D6BC1D6742514AFC63</key>

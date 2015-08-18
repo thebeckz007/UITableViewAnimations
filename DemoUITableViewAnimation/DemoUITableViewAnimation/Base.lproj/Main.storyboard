@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="MjG-4A-HeG">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="MjG-4A-HeG">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
@@ -96,6 +96,12 @@
                     </view>
                     <extendedEdge key="edgesForExtendedLayout" top="YES"/>
                     <navigationItem key="navigationItem" id="NyV-Ew-Wcb"/>
+                    <connections>
+                        <outlet property="btnAniamtionAwesome" destination="woq-lY-p1g" id="oRd-tc-DqL"/>
+                        <outlet property="btnAniamtionBottomTop" destination="D6k-TN-MbX" id="fq3-Z0-OXQ"/>
+                        <outlet property="btnAniamtionRightLeft" destination="j10-l6-OGl" id="vdo-uK-Xl9"/>
+                        <outlet property="btnAniamtionTopBottom" destination="YDr-z8-oUr" id="Sqd-4k-P30"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
