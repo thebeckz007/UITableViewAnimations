@@ -29,6 +29,8 @@
     }
     
     [tbvView reloadData];
+    
+    [tbvView performAnimation:self.animationTableview];
 }
 
 - (void)didReceiveMemoryWarning {

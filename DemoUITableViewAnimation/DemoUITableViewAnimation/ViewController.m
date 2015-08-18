@@ -39,6 +39,7 @@
         DemoTableViewController *demoVC = (DemoTableViewController *)segue.destinationViewController;
         [demoVC setAnimationTableview:AnimationAwesome];
     }
+    
 }
 
 @end
