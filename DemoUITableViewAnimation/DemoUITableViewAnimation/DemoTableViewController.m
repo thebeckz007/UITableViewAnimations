@@ -47,9 +47,15 @@ static NSString *const cellIdentifier = @"cellDemo";
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
-    UILabel *lblTmp = (UILabel *)[tableView viewWithTag:101];
-    [lblTmp setText:[arrData objectAtIndex:indexPath.row]];
+    // check initial
+    if (!cell) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
+    }
+    [cell.textLabel setText:[arrData objectAtIndex:indexPath.row]];
     
+    for (int i = 0; i < 10000; i++) {
+        NSLog(@"%d - %@", i, [arrData objectAtIndex:indexPath.row]);
+    }
     return cell;
 }
 
