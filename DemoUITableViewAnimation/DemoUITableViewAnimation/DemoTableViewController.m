@@ -21,21 +21,33 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    // initial array data
-    arrData = [[NSMutableArray alloc] init];
-    NSInteger iCount = 100;
-    for (NSInteger i = 0; i < iCount; i++) {
-        [arrData addObject:[NSString stringWithFormat:@"TEXT - %ld", i]];
-    }
-    
-    [tbvView reloadData];
-    
-    [tbvView performAnimation:self.animationTableview];
+    // load data
+    [self loadData];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)loadData {
+    // initial array data
+    arrData = [[NSMutableArray alloc] init];
+    NSInteger iCount = 100;
+    for (NSInteger i = 0; i < iCount; i++) {
+        [arrData addObject:[NSString stringWithFormat:@"TEXT - %ld", (long)i]];
+    }
+    
+    [tbvView reloadData];
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0)), dispatch_get_main_queue(), ^{
+        // perform animation
+        [tbvView performAnimation:self.animationTableview];
+    });
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
 }
 
 static NSString *const cellIdentifier = @"cellDemo";
@@ -53,9 +65,6 @@ static NSString *const cellIdentifier = @"cellDemo";
     }
     [cell.textLabel setText:[arrData objectAtIndex:indexPath.row]];
     
-    for (int i = 0; i < 10000; i++) {
-        NSLog(@"%d - %@", i, [arrData objectAtIndex:indexPath.row]);
-    }
     return cell;
 }
 

@@ -74,7 +74,7 @@
     CGFloat tableHeight = self.bounds.size.height;
     
     for (UITableViewCell *cell in cells ){
-        cell.transform = CGAffineTransformMakeTranslation(0, -tableHeight);
+        cell.transform = CGAffineTransformMakeTranslation(0, -(tableHeight + cell.bounds.size.height));
     }
     
     NSInteger index = 0;
