@@ -39,9 +39,8 @@
     }
     
     [tbvView reloadData];
-    
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0)), dispatch_get_main_queue(), ^{
-        // perform animation
+
+    dispatch_async(dispatch_get_main_queue(), ^{
         [tbvView performAnimation:self.animationTableview];
     });
 }
