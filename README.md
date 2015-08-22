@@ -1,7 +1,7 @@
 # UITableViewAnimations
 perform animations for UITableView
 ### Animations list
-- AnimationNone = 0,
+- AnimationNone
 - AnimationBottomToTop
 - AnimationTopToBottom
 - AnimationRightToLeft
