@@ -7,7 +7,7 @@ perform animations for UITableView
 - AnimationRightToLeft
 - AnimationAwesome1
 - AnimationAwesome2
-- 
+
 # Demo
 [![Demo AnimationBottomToTop](http://i.giphy.com/3o85xB5BVZMoNhQiuA.gif)]
 
