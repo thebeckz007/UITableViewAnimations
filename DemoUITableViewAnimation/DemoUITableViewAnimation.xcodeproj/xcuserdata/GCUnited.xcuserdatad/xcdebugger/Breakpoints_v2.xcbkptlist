@@ -10,12 +10,28 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "DemoUITableViewAnimation/UITableView+Animations.m"
-            timestampString = "461716704.336382"
+            timestampString = "461950331.818707"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "49"
-            endingLineNumber = "49"
-            landmarkName = "-performAnimationBottomToTop"
+            startingLineNumber = "91"
+            endingLineNumber = "91"
+            landmarkName = "-performAnimationBottomToTop:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DemoUITableViewAnimation/UITableView+Animations.m"
+            timestampString = "461950331.818707"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "200"
+            endingLineNumber = "200"
+            landmarkName = "-performAnimationAwesome1:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

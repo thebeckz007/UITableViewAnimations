@@ -41,7 +41,9 @@
     [tbvView reloadData];
 
     dispatch_async(dispatch_get_main_queue(), ^{
-        [tbvView performAnimation:self.animationTableview];
+        [tbvView performAnimation:self.animationTableview finishBlock:^(bool finished) {
+            
+        }];
     });
 }
 
@@ -63,7 +65,8 @@ static NSString *const cellIdentifier = @"cellDemo";
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
     }
     [cell.textLabel setText:[arrData objectAtIndex:indexPath.row]];
-    
+    [cell.textLabel setTextColor:[UIColor whiteColor]];
+    [cell setBackgroundColor:[UIColor colorWithRed:255/ 255.0 green:98/ 255.0 blue:90/ 255.0 alpha:1.0]];
     return cell;
 }
 

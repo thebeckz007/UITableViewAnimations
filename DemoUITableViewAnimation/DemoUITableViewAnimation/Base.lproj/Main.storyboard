@@ -17,21 +17,6 @@
                         <rect key="frame" x="0.0" y="64" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="woq-lY-p1g">
-                                <rect key="frame" x="20" y="326" width="560" height="34"/>
-                                <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="34" id="zJr-7r-Eau"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <state key="normal" title="Animation Awesome">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="JVh-Kl-Sbc" kind="push" identifier="AniamtionAwesomeSegue" id="Kfa-gO-kVr"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D6k-TN-MbX">
                                 <rect key="frame" x="20" y="104" width="560" height="34"/>
                                 <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
@@ -77,11 +62,44 @@
                                     <segue destination="JVh-Kl-Sbc" kind="push" identifier="AniamtionRightLeftSegue" id="ZZk-8J-vCF"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="woq-lY-p1g">
+                                <rect key="frame" x="20" y="326" width="560" height="34"/>
+                                <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="zJr-7r-Eau"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Animation Awesome1">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="JVh-Kl-Sbc" kind="push" identifier="AniamtionAwesome1Segue" id="Kfa-gO-kVr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t8W-jV-7EF">
+                                <rect key="frame" x="20" y="400" width="560" height="34"/>
+                                <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="IIB-XU-AUS"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="34" id="NMs-eQ-Twh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Animation Awesome2">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="JVh-Kl-Sbc" kind="push" identifier="AniamtionAwesome2Segue" id="OtS-V6-jDt"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="t8W-jV-7EF" firstAttribute="top" secondItem="woq-lY-p1g" secondAttribute="bottom" constant="40" id="2ew-yE-nkK"/>
                             <constraint firstItem="woq-lY-p1g" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="Bbf-Ms-t90"/>
                             <constraint firstAttribute="trailing" secondItem="D6k-TN-MbX" secondAttribute="trailing" constant="20" id="CEZ-Re-g0d"/>
+                            <constraint firstAttribute="trailing" secondItem="t8W-jV-7EF" secondAttribute="trailing" constant="20" id="FSH-Lx-KHS"/>
                             <constraint firstItem="j10-l6-OGl" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="GCA-UO-O8A"/>
                             <constraint firstItem="D6k-TN-MbX" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="IaK-DH-4hF"/>
                             <constraint firstItem="YDr-z8-oUr" firstAttribute="top" secondItem="D6k-TN-MbX" secondAttribute="bottom" constant="40" id="KhQ-cA-Ssi"/>
@@ -92,15 +110,17 @@
                             <constraint firstAttribute="trailing" secondItem="YDr-z8-oUr" secondAttribute="trailing" constant="20" id="T7R-GZ-tS6"/>
                             <constraint firstItem="YDr-z8-oUr" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="Th6-WJ-l7Z"/>
                             <constraint firstItem="woq-lY-p1g" firstAttribute="top" secondItem="j10-l6-OGl" secondAttribute="bottom" constant="40" id="YCI-hS-KYo"/>
+                            <constraint firstItem="t8W-jV-7EF" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="ika-la-nZX"/>
                         </constraints>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout" top="YES"/>
                     <navigationItem key="navigationItem" id="NyV-Ew-Wcb"/>
                     <connections>
-                        <outlet property="btnAniamtionAwesome" destination="woq-lY-p1g" id="oRd-tc-DqL"/>
-                        <outlet property="btnAniamtionBottomTop" destination="D6k-TN-MbX" id="fq3-Z0-OXQ"/>
-                        <outlet property="btnAniamtionRightLeft" destination="j10-l6-OGl" id="vdo-uK-Xl9"/>
-                        <outlet property="btnAniamtionTopBottom" destination="YDr-z8-oUr" id="Sqd-4k-P30"/>
+                        <outlet property="btnAnimationAwesome1" destination="woq-lY-p1g" id="wuu-MJ-hxr"/>
+                        <outlet property="btnAnimationAwesome2" destination="t8W-jV-7EF" id="bUW-Zc-gli"/>
+                        <outlet property="btnAnimationBottomTop" destination="D6k-TN-MbX" id="llb-Ob-8bq"/>
+                        <outlet property="btnAnimationRightLeft" destination="j10-l6-OGl" id="8TH-rH-ixz"/>
+                        <outlet property="btnAnimationTopBottom" destination="YDr-z8-oUr" id="ncu-W5-XwZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>

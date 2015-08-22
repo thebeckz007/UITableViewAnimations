@@ -11,10 +11,11 @@
 #import <QuartzCore/QuartzCore.h>
 
 @interface ViewController ()
-@property (weak, nonatomic) IBOutlet UIButton *btnAniamtionBottomTop;
-@property (weak, nonatomic) IBOutlet UIButton *btnAniamtionTopBottom;
-@property (weak, nonatomic) IBOutlet UIButton *btnAniamtionRightLeft;
-@property (weak, nonatomic) IBOutlet UIButton *btnAniamtionAwesome;
+@property (weak, nonatomic) IBOutlet UIButton *btnAnimationBottomTop;
+@property (weak, nonatomic) IBOutlet UIButton *btnAnimationTopBottom;
+@property (weak, nonatomic) IBOutlet UIButton *btnAnimationRightLeft;
+@property (weak, nonatomic) IBOutlet UIButton *btnAnimationAwesome1;
+@property (weak, nonatomic) IBOutlet UIButton *btnAnimationAwesome2;
 @end
 
 @implementation ViewController
@@ -24,10 +25,11 @@
     // Do any additional setup after loading the view, typically from a nib.
     
     // set corner radius for all buttons animation
-    [self.btnAniamtionBottomTop.layer setCornerRadius:15.0f];
-    [self.btnAniamtionTopBottom.layer setCornerRadius:15.0f];
-    [self.btnAniamtionRightLeft.layer setCornerRadius:15.0f];
-    [self.btnAniamtionAwesome.layer setCornerRadius:15.0f];
+    [self.btnAnimationBottomTop.layer setCornerRadius:15.0f];
+    [self.btnAnimationTopBottom.layer setCornerRadius:15.0f];
+    [self.btnAnimationRightLeft.layer setCornerRadius:15.0f];
+    [self.btnAnimationAwesome1.layer setCornerRadius:15.0f];
+    [self.btnAnimationAwesome2.layer setCornerRadius:15.0f];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -45,11 +47,13 @@
     } else if ([segue.identifier isEqualToString:@"AniamtionRightLeftSegue"]) {
         DemoTableViewController *demoVC = (DemoTableViewController *)segue.destinationViewController;
         [demoVC setAnimationTableview:AnimationRightToLeft];
-    } else if ([segue.identifier isEqualToString:@"AniamtionAwesomeSegue"]) {
+    } else if ([segue.identifier isEqualToString:@"AniamtionAwesome1Segue"]) {
         DemoTableViewController *demoVC = (DemoTableViewController *)segue.destinationViewController;
-        [demoVC setAnimationTableview:AnimationAwesome];
-    }
-    
+        [demoVC setAnimationTableview:AnimationAwesome1];
+    } else if ([segue.identifier isEqualToString:@"AniamtionAwesome2Segue"]) {
+        DemoTableViewController *demoVC = (DemoTableViewController *)segue.destinationViewController;
+        [demoVC setAnimationTableview:AnimationAwesome2];
+    } // else if
 }
 
 @end

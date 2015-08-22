@@ -13,7 +13,8 @@ typedef enum : NSUInteger {
     AnimationBottomToTop,
     AnimationTopToBottom,
     AnimationRightToLeft,
-    AnimationAwesome,
+    AnimationAwesome1,
+    AnimationAwesome2,
 } UITableViewAnimation;
 
 @interface UITableView (Animations)
@@ -21,6 +22,6 @@ typedef enum : NSUInteger {
 /*!
  *  @perform animations
  */
-- (void)performAnimation:(UITableViewAnimation)animation;
+- (void)performAnimation:(UITableViewAnimation)animation finishBlock:(void (^)(bool finished))block;
 
 @end
